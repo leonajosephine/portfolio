@@ -10,7 +10,8 @@
     letter-spacing:.015em;
     line-height: 1.5; /*.95*/
     color: var(--text);
-      font-size: 8rem; /*16 füllt ganze stage */
+    /*font-size: 8rem; 16 füllt ganze stage */
+    font-size: clamp(2.2rem, 8vw, 8rem);
   }
   .tagline {
     margin-top: .6rem;
