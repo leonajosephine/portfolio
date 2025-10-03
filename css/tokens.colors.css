@@ -1,0 +1,33 @@
+:root {
+    /* Neutrals */
+    --bg: #0f1215;
+    --surface-1: #171a1e;    /* Karten-Grundfläche */
+    --surface-2: #1e2328;    /* leichte Absetzung */
+    --text: #f5f5f7;
+    --text-dim: #c7c9cc;
+    --line: rgba(255,255,255,.08);
+  
+    /* Accent – Electric Cyan */
+    --accent: #FDFD96; /* #00F0FF cyan - electric blue: #7DF9FF - Pastell yellow: #FDFD96 */
+    --accent-600: #FCFC69; /* #FCFC69 #00c7d2 */
+    --accent-glow: 0 0 7px rgba(232, 232, 149, 1);
+  
+    /* Shadows (subtil, modern) */
+    --shadow-lg: 0 14px 40px rgba(0,0,0,.45);
+    --shadow-md: 0 8px 24px rgba(0,0,0,.35);
+  
+    /* Radii/Depth */
+    --radius-xl: 18px;
+    --radius-lg: 14px;
+    --radius-md: 10px;
+  
+    /* Gradients for overlays */
+    --overlay-strong: linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,.65) 100%);
+    --overlay-soft: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,.35) 100%);
+  }
+  
+  /* Optional: Automatischer Dark Mode respektieren */
+  @media (prefers-color-scheme: light) {
+    :root { color-scheme: dark; } /* wir bleiben dark als Default */
+  }
+  

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leona Redmann – Portfolio</title>
+  <link rel="stylesheet" href="css/tokens.colors.css">
+	<link rel="stylesheet" href="css/tokens.fonts.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/components.css">
+	<link rel="stylesheet" href="css/theme.light.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>LEONA <em>JOSEPHINE</em> REDMANN</h1>
+    <p class="tagline">FRONTEND DEVELOPER · UI/UX DESIGNER · CREATIVE TECH</p>
+		<div class="shape cube placeholder"></div>
+  </header>
+
+  <section class="about">
+    <div class="about__img" aria-hidden="true"></div>
+    <div class="about__text">
+      <h2>ABOUT / SKILLS</h2>
+      <p>Kurzer Introtext als Platzhalter. Hier steht in 2–3 Sätzen, was du machst und worauf du dich fokussierst.</p>
+      <ul class="chips" aria-label="Skills">
+        <li>React</li><li>TypeScript</li><li>UI/UX</li><li>3D</li><li>Webdevelopment</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2>PORTFOLIO</h2>
+
+    <!-- Dynamisches Grid: Reihenfolge im DOM = visuelle Reihenfolge -->
+    <div class="pf-grid">
+      <div class="tile span-col-4 span-row-3 has-image">
+			<div class="tile__bg" style="background-image:url('img/landingpage.jpeg')"></div>
+        <h3>Landing Page</h3>
+        <p>Lorem ipsum dolor amet.</p>
+      </div>
+
+      <div class="tile span-col-3 span-row-5 has-image">
+			<div class="tile__bg" style="background-image:url('img/collage.jpg')"></div>
+        <h3>PROJECT NAME B</h3>
+        <p>Lorem ipsum dolor amet.</p>
+      </div>
+
+      <div class="tile span-col-5 span-row-2 has-image">
+  			<div class="tile__bg" style="background-image:url('img/branding.jpeg')"></div>
+        <h3>PROJECT NAME C</h3>
+        <p>Lorem ipsum dolor amet.</p>
+      </div>
+
+      <div class="tile span-col-1 span-row-1 has-image">
+			<div class="tile__bg" style="background-image:url('img/netflix.jpg')"></div>
+        <h3>PROJECT NAME D</h3>
+        <p>Kurzer Teaser.</p>
+      </div>
+
+      <div class="tile span-col-6 span-row-2 has-image">
+			<div class="tile__bg" style="background-image:url('img/advertisement.jpg')"></div>
+        <h3>PROJECT NAME E</h3>
+        <p>Lorem ipsum dolor amet.</p>
+      </div>
+
+      <div class="tile span-col-4 span-row-3 has-image">
+			<div class="tile__bg" style="background-image:url('img/websiteshop.jpeg')"></div>
+        <h3>PROJECT NAME F</h3>
+        <p>Lorem ipsum dolor amet.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="cta">
+    <h2>LET'S CREATE SOMETHING TOGETHER</h2>
+    <button class="btn">CONTACT</button>
+  </footer>
+
+	<button id="themeToggle" class="btn" style="position:fixed;right:1rem;bottom:1rem;">
+  		Change Theme
+	</button>
+
+	<script src="js/theme-toggle.js"></script>
+</body>
+</html>

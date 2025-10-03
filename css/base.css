@@ -1,0 +1,29 @@
+/* Base / Reset */
+* { box-sizing: border-box; margin: 0; padding: 10; }
+html, body { height: 100%; }
+html { color-scheme: dark light; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: var(--fs-body)/1.6 var(--font-body);
+}
+
+/* Typo defaults */
+h1, h2, h3, h4, h5, h6 { 
+  margin: 0 0 .5rem;
+  background: transparent; /* fix: keine ungewollten BGs */
+  color: var(--text);
+}
+p { margin: 0 0 1rem; color: var(--text-dim); }
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.container { max-width: 1180px; margin: 0 auto; padding-inline: 1rem; }
+.section   { padding: 2.25rem 0; }
+.hr        { height: 2px; background: var(--line); border: 0; }
+.visually-hidden {
+  position: absolute; clip: rect(0 0 0 0); clip-path: inset(50%);
+  width: 1px; height: 1px; overflow: hidden; white-space: nowrap;
+}

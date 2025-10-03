@@ -1,0 +1,17 @@
+/* Aktiv via <html data-theme="light"> */
+html[data-theme="light"] {
+    --bg: #f7f8fa;
+    --surface-1: #ffffff;
+    --surface-2: #eef1f5;
+    --text: #1c1f23;
+    --text-dim: #4c5157;
+    --line: rgba(0,0,0,.08);
+  
+    --accent: #00BFD6;
+    --accent-600: #00a1b6;
+    --accent-glow: 0 0 22px rgba(0,191,214,.35);
+  
+    --shadow-lg: 0 16px 36px rgba(0,0,0,.12);
+    --shadow-md: 0 10px 22px rgba(0,0,0,.10);
+  }
+  
