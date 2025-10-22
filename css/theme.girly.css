@@ -1,0 +1,18 @@
+html[data-theme="girly"]{
+    --bg:#141217;
+    --surface-1:#1b1820;
+    --surface-2:#221e29;
+    --text:#F7EEF4;
+    --text-dim:#DCC8D6;
+    --line:rgba(255,240,250,.10);
+  
+    --accent:#F07AA8;           /* Rosé-Pink */
+    --accent-600:#CE5E8B;
+    --accent-glow:0 0 28px rgba(240,122,168,.32);
+  
+    --overlay-strong:linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(33,24,31,.7) 100%);
+    --overlay-soft:  linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(33,24,31,.4) 100%);
+  
+    --shadow-lg:0 18px 48px rgba(0,0,0,.46);
+    --shadow-md:0 10px 28px rgba(0,0,0,.38);
+  }

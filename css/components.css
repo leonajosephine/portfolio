@@ -4,6 +4,8 @@
     border-bottom: 1px solid var(--line);
     background: transparent;
     text-align: center;
+    position: relative; /* für 3d placeholder */
+    overflow: visible;  /* für 3d placeholder */
   }
   .site-header h1 {
     font: 800 var(--fs-hero) var(--font-display);
@@ -24,18 +26,16 @@
   }
   
   /*3d placeholder*/
-  .shape.placeholder {
-    width: 120px; height: 120px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent), var(--accent-600));
-    opacity: .8;
-  }
-  
-  .shape.cube {
-    width: 80px; height: 80px;
-    background: var(--surface-2);
-    transform: rotateX(20deg) rotateY(30deg);
-    box-shadow: var(--shadow-md);
+  .hero-3d{
+    position: absolute;
+    width: clamp(160px, 20vw, 260px);
+    height: auto;
+    top: 1.2rem;
+    right: 1rem;
+    pointer-events: none;            /* blockiert keine Klicks */
+    z-index: 0;                      /* HINTER dem Text: 0 ; VOR dem Text: 2 */
+    opacity: .8;                    /* leicht soft */
+    filter: drop-shadow(0 10px 24px rgba(0,0,0,.35));
   }
   
   /* ===== Sections ===== */
